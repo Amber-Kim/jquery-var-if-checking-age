@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jquery var if-checking age</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>JavaScript <span>var, val(), if</span></h1>
+        <div class="login">
+            <h2>Check over 20 or not (jQuery - if statement)</h2>
+            <input id="id" type="text" placeholder="Enter number">
+            <button>Adult Certification</button>
+        </div>
+    </div>
+
+    <script>
+        $('.login button').click(function () {
+            var num = $('#id').val()
+
+            if (num == '') {
+                alert('Enter your age')
+            } else if (num < 20) {
+                alert('Your age is under 20')
+            } else if (num >= 20) {
+                alert('You are adult')
+            } else {
+                alert('Enter only numer')
+            }
+        })
+    </script>
+</body>
+
+</html>
